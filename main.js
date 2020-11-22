@@ -200,7 +200,7 @@ require([
 
   earthquakeLayer
     .queryFeatures({
-      where: "mag > 7"
+      where: "mag >= 9"
     })
     .then(function(result) {
       const features = result.features;
